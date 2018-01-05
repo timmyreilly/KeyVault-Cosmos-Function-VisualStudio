@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FuncV1", "FuncV1\FuncV1.csproj", "{CC936E75-5C5A-4B81-BAA6-2E15952856E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BYOKFunction", "FuncV1\BYOKFunction.csproj", "{CC936E75-5C5A-4B81-BAA6-2E15952856E8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeyVaultEncryptionLibrary", "KeyVaultEncryptionLibrary\KeyVaultEncryptionLibrary.csproj", "{18C25818-9E46-48E3-8F11-5BD5EB58DD29}"
 EndProject

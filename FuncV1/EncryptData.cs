@@ -76,9 +76,6 @@ namespace FuncV1
             string dataToBeEncrypted = jdata.GetValue("dataToBeEncrypted").ToString();
             var EncryptedData = await KVR.EncryptData(dataToBeEncrypted);
 
-            //var DecryptedData = await KVR.DecryptDataAsync(EncryptedData);
-            //var j = JsonConvert.DeserializeObject(DecryptedData); 
-
             // Push Encrypted Data to Cosmos
             CosmosRepository CR = new CosmosRepository(cosmosEndpoint, cosmosPrimaryKey);
             var Result = CR.UpsertUser(jdata.Value<string>("databaseName"), jdata.Value<string>("collectionID"), jdata.Value<string>("userID"), EncryptedData);

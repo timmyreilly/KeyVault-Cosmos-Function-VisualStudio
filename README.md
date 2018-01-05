@@ -76,7 +76,6 @@ The kekIdentifier points to the Key that encrypts or "wraps" your dataEncryption
 
 ### A couple features that would round out this project. 
 - The Ability to rotate Key Encryption Keys as a function
-- The Ability to pass random JSON and have it land encrypted piece by piece in Cosmos. 
 - Better exception handling for unfound resources. 
 
 ## Feedback: 

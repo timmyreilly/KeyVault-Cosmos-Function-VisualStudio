@@ -1,0 +1,15 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=storeafunc9520;AccountKey=secretCQ5CNZIjt0D8Vwo6hZClgnulam0bWY1GIHyZ/k3XHcbxX0qFCmIl1VAHLQXjSe0SvjFnirMREMciw==",
+    "AzureWebJobsDashboard": "DefaultEndpointsProtocol=https;AccountName=storefunc9520;AccountKey=secretfogCQ5CNZIjt0D8Vwo6hZClgnulam0bWY1GIHyZ/k3XHcbxX0qFCmIl1VAHLQXjSe0SvjFnirMREMciw==",
+    "applicationId": "secret1-a2aa-40ba-a621-c8320026e739",
+    "applicationSecret": "secretsecretHFXsaCqvExPO2AP3tugkoJIo8cX6N9zVw=",
+    "keyVaultPath": "https://kvtest.vault.azure.net/",
+    "cosmosEndpoint": "https://cosmostest.documents.azure.com:443/",
+    "cosmosPrimaryKey": "secretsecrettQaKtJow34S1LYtQEyEbaW7f7mXpUNs5Xm0mxTkob57V7chtAoVpX5LiuNJdTPkCmtsEL8v3w==",
+    "dataEncryptionKey": "DEK",
+    "kekIdentifier": "KeyOne",
+    "redisConnectionString": "rediscachetest.redis.cache.windows.net:6380,password=secretdf/UcfgXeqqb5IvD6zSLMkG48oiKNzAM+T8g=,ssl=True,abortConnect=False"
+  }
+}

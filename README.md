@@ -8,12 +8,33 @@ We've built three functions, one to encrypt data and put it into Cosmos, another
 
 They are all HTTP Trigger Based Functions. 
 
+# Prerequisites:
+1. Key Vault and Authorized Application
+
+	To get started with Azure Key Vault, follow the guide here:
+		https://docs.microsoft.com/en-us/azure/key-vault/key-vault-get-started
+
+	Make sure you:
+		a. Set up Azure Key Vault
+			*Values to be used in ```local.settings.json``` file:*
+			- ```keyVaultPath``` : the value of ```Vault URI``` from the key vault properties returned from cmdlet OR if using the portal, it'll be the value of ```DNS Name```
+			- ```dataEncryptionKey``` : the name of the secret which is used to encrypt your data and is stored in Azure Key Vault in an encrypted state
+			- ```kekIdentifier``` : the name of the key which is used to encrypt your ```dataEncryptionKey```
+		b. Register an application with Active Directory
+			*Values to be used in ```local.settings.json``` file:*
+			- ```applicationId``` : the value of ```Application ID``` in the App registration portion of Azure Active Directory in the portal
+			- ```applicationSecret``` : the value of the key created in the App registration portion of Azure Active Directory in the portal
+		c. Authorize the application to use the key or secret
+2. Azure Functions Set Up
+3. Cosmos DB Set Up
+4. Redis Set Up
+
 # Setup:
 
 1. To run clone the repo and open in Visual Studio 2018 V 15.5.1 with Azure Tools Installed. 
 2. Restore NuGet Packages (right click Solution)
 3. Rebuild Project 
-4. Update/Add local.settings.json
+4. Update/Add local.settings.json (refer to the Prerequisites sections for information regarding the values)
 
 The kekIdentifier points to the Key that encrypts or "wraps" your dataEncryptionKey which is stored as a secret in Azure Key Vault in an encrypted state. 
 

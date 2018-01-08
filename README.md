@@ -19,18 +19,18 @@ They are all HTTP Trigger Based Functions.
 
 		a. Set up Azure Key Vault
 
-			*Values to be used in ```local.settings.json``` file:*
+			*Values to be used in `local.settings.json` file:*
 
-			- ```keyVaultPath``` : the value of ```Vault URI``` from the key vault properties returned from cmdlet OR if using the Azure Portal, it'll be the value of ```DNS Name``` from the given Key Vault
-			- ```dataEncryptionKey``` : the name of the secret which is used to encrypt your data and is stored in Azure Key Vault in an encrypted state
-			- ```kekIdentifier``` : the name of the key which is used to encrypt your ```dataEncryptionKey```
+			- `keyVaultPath` : the value of `Vault URI` from the key vault properties returned from cmdlet OR if using the Azure Portal, it'll be the value of `DNS Name` from the given Key Vault
+			- `dataEncryptionKey` : the name of the secret which is used to encrypt your data and is stored in Azure Key Vault in an encrypted state
+			- `kekIdentifier` : the name of the key which is used to encrypt your `dataEncryptionKey`
 
 		b. Register an application with Active Directory
 
-			*Values to be used in ```local.settings.json``` file:*
+			*Values to be used in `local.settings.json` file:*
 
-			- ```applicationId``` : the value of ```Application ID``` in the App registration portion of Azure Active Directory in the portal
-			- ```applicationSecret``` : the value of the key created in the App registration portion of Azure Active Directory in the portal
+			- `applicationId` : the value of `Application ID` in the App registration portion of Azure Active Directory in the portal
+			- `applicationSecret` : the value of the key created in the App registration portion of Azure Active Directory in the portal
 
 		c. Authorize the application to use the key or secret
 
@@ -38,16 +38,16 @@ They are all HTTP Trigger Based Functions.
 	
 	Make sure you:
 		a. Create an Azure Cosmos DB Account
-			*Values to be used in ```local.settings.json``` file:*
-			- ```cosmosEndpoint``` : value of ```URI``` from Cosmos DB Account >> Keys >> URI on the Azure Portal
-			- ```cosmosPrimaryKey```: value of ```Primary Key``` from Azure Cosmos DB Account >> Keys >> Primary Key on the Azure Portal
+			*Values to be used in `local.settings.json` file:*
+			- `cosmosEndpoint` : value of `URI` from Cosmos DB Account >> Keys >> URI on the Azure Portal
+			- `cosmosPrimaryKey`: value of `Primary Key` from Azure Cosmos DB Account >> Keys >> Primary Key on the Azure Portal
 
 3. Redis Set Up
 
 	Make sure you:
 		a. Create a Azure Redis Cache
-			*Values to be used in ```local.settings.json``` file:*
-			- ```redisConnectionString``` : the value of ```Primary connection string``` from Redis Cache >> Access Keys >> Primary connection string on the Azure Portal
+			*Values to be used in `local.settings.json` file:*
+			- `redisConnectionString` : the value of `Primary connection string` from Redis Cache >> Access Keys >> Primary connection string on the Azure Portal
 
 # Setup:
 

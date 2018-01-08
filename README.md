@@ -17,19 +17,14 @@ They are all HTTP Trigger Based Functions.
 		https://docs.microsoft.com/en-us/azure/key-vault/key-vault-get-started
 
 	Make sure you:
-
 		a. Set up Azure Key Vault
-
 			*Values to be used in `local.settings.json` file:*
-
 			- `keyVaultPath` : the value of `Vault URI` from the key vault properties returned from cmdlet OR if using the Azure Portal, it'll be the value of `DNS Name` from the given Key Vault
 			- `dataEncryptionKey` : the name of the secret which is used to encrypt your data and is stored in Azure Key Vault in an encrypted state
 			- `kekIdentifier` : the name of the key which is used to encrypt your `dataEncryptionKey`
 
 		b. Register an application with Active Directory
-
 			*Values to be used in `local.settings.json` file:*
-
 			- `applicationId` : the value of `Application ID` in the App registration portion of Azure Active Directory in the portal
 			- `applicationSecret` : the value of the key created in the App registration portion of Azure Active Directory in the portal
 

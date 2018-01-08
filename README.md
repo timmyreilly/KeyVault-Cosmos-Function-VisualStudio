@@ -13,6 +13,7 @@ They are all HTTP Trigger Based Functions.
 1. Key Vault and Authorized Application
 
 	To get started with Azure Key Vault, follow the guide here:
+
 		https://docs.microsoft.com/en-us/azure/key-vault/key-vault-get-started
 
 	Make sure you:

@@ -101,6 +101,11 @@ The kekIdentifier points to the Key that encrypts or "wraps" your dataEncryption
 } 
 ```
 
+
+## Architecture Diagram: 
+
+![Architecture Diagram](https://github.com/timmyreilly/KeyVault-Cosmos-Function-VisualStudio/blob/archdiagram/ReadmeImages/ArchDiagram.png)
+
 ## TODO: 
 
 ### A couple features that would round out this project. 

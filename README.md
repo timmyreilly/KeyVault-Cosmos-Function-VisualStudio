@@ -37,9 +37,12 @@ https://docs.microsoft.com/en-us/azure/key-vault/key-vault-get-started
 	- *Values to be used in `local.settings.json` file:*
 		- `redisConnectionString` : the value of `Primary connection string` from Redis Cache >> Access Keys >> Primary connection string on the Azure Portal
 
+### 4. Visual Studio 2017
+
+
 ## Setup:
 
-1. To run clone the repo and open in Visual Studio 2018 V 15.5.1 with Azure Tools Installed. 
+1. To run clone the repo and open in Visual Studio 2017 V 15.5.1 with Azure Tools Installed. 
 2. Restore NuGet Packages (right click Solution)
 3. Rebuild Project 
 4. Update/Add local.settings.json (refer to the Prerequisites sections for information regarding the values)

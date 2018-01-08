@@ -8,12 +8,41 @@ We've built three functions, one to encrypt data and put it into Cosmos, another
 
 They are all HTTP Trigger Based Functions. 
 
-# Setup:
+## Prerequisites:
+
+### 1. Key Vault and Authorized Application
+To get started with Azure Key Vault, follow the guide here: 
+
+https://docs.microsoft.com/en-us/azure/key-vault/key-vault-get-started
+
+- Set up Azure Key Vault
+	- *Values to be used in `local.settings.json` file:*
+		- `keyVaultPath` : the value of `Vault URI` from the key vault properties returned from cmdlet OR if using the Azure Portal, it'll be the value of `DNS Name` from the given Key Vault
+		- `dataEncryptionKey` : the name of the secret which is used to encrypt your data and is stored in Azure Key Vault in an encrypted state
+		- `kekIdentifier` : the name of the key which is used to encrypt your `dataEncryptionKey`
+- Register an application with Active Directory
+	- *Values to be used in `local.settings.json` file:*
+		- `applicationId` : the value of `Application ID` in the App registration portion of Azure Active Directory in the portal
+		- `applicationSecret` : the value of the key created in the App registration portion of Azure Active Directory in the portal
+- Authorize the application to use the key or secret
+
+### 2. Cosmos DB
+- Create an Azure Cosmos DB Account
+	- *Values to be used in `local.settings.json` file:*
+		- `cosmosEndpoint` : value of `URI` from Cosmos DB Account >> Keys >> URI on the Azure Portal
+		- `cosmosPrimaryKey`: value of `Primary Key` from Azure Cosmos DB Account >> Keys >> Primary Key on the Azure Portal
+
+### 3. Redis
+- Create a Azure Redis Cache
+	- *Values to be used in `local.settings.json` file:*
+		- `redisConnectionString` : the value of `Primary connection string` from Redis Cache >> Access Keys >> Primary connection string on the Azure Portal
+
+## Setup:
 
 1. To run clone the repo and open in Visual Studio 2018 V 15.5.1 with Azure Tools Installed. 
 2. Restore NuGet Packages (right click Solution)
 3. Rebuild Project 
-4. Update/Add local.settings.json
+4. Update/Add local.settings.json (refer to the Prerequisites sections for information regarding the values)
 
 The kekIdentifier points to the Key that encrypts or "wraps" your dataEncryptionKey which is stored as a secret in Azure Key Vault in an encrypted state. 
 
@@ -91,4 +120,10 @@ The kekIdentifier points to the Key that encrypts or "wraps" your dataEncryption
 ### Visual Studio Code support for Functions
 - No clear story for building/debugging C# Projects in Visual Studio Code, but can be really fun in Node. 
 
+## Authors
+- [Tim Reilly](https://github.com/timmyreilly)
+- [Elise Donkor](https://github.com/edonkor1)
+- [Yutang Lin](https://github.com/yutanglin16)
 
+## Issues?
+- [Create an issue](https://github.com/timmyreilly/KeyVault-Cosmos-Function-VisualStudio/issues)

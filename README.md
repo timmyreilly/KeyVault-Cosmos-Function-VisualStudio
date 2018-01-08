@@ -1,3 +1,4 @@
+
 # Function to Interface with KeyVault and Redis 
 
 These Functions replicate bring your own key encryption to Cosmos DB. 
@@ -13,11 +14,12 @@ They are all HTTP Trigger Based Functions.
 1. Key Vault and Authorized Application
 
 	To get started with Azure Key Vault, follow the guide here:
+		
 		https://docs.microsoft.com/en-us/azure/key-vault/key-vault-get-started
 
 	Make sure you:
 	- Set up Azure Key Vault
-		*Values to be used in `local.settings.json` file:*
+		- *Values to be used in `local.settings.json` file:*
 			- `keyVaultPath` : the value of `Vault URI` from the key vault properties returned from cmdlet OR if using the Azure Portal, it'll be the value of `DNS Name` from the given Key Vault
 			- `dataEncryptionKey` : the name of the secret which is used to encrypt your data and is stored in Azure Key Vault in an encrypted state
 			- `kekIdentifier` : the name of the key which is used to encrypt your `dataEncryptionKey`

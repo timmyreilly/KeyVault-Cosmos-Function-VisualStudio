@@ -129,8 +129,9 @@ The kekIdentifier points to the Key that encrypts or "wraps" your dataEncryption
 - No clear story for building/debugging C# Projects in Visual Studio Code, but can be really fun in Node. 
 
 ## Authors
-- [Tim Reilly](https://github.com/timmyreilly)
+- [Chris Risner](https://github.com/chrisrisner)
 - [Elise Donkor](https://github.com/edonkor1)
+- [Tim Reilly](https://github.com/timmyreilly)
 - [Yutang Lin](https://github.com/yutanglin16)
 
 ## Issues?
